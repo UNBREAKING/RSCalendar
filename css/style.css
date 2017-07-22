@@ -1,0 +1,262 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Gotham-Book;
+}
+
+
+
+@font-face {
+    font-family: Gotham-Book; /* Имя шрифта */
+    src: url(fonts/GothamSSm-Book.ttf); /* Путь к файлу со шрифтом */
+}
+
+a{
+    text-decoration: none;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+}
+
+#root  .header{
+    background: dodgerblue;
+
+    font-size: 40px;
+    width: 100%;
+
+    height: 50px;
+}
+
+#root  .header > a{
+    color: white;
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+
+#root .header a:hover{
+    color: lightgrey;
+    text-decoration: none;
+}
+
+/*  Description of menu*/
+#root #menu{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    margin-left: -125px;
+}
+
+#root #menu .menu-block{
+   display: inline-block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    background: dodgerblue;
+    color:white;
+    margin-left: 20px;
+    border: none;
+    margin-top: 20px;
+}
+#root #menu .menu-block a{
+    color: white;
+    font-size: 24px;
+    width: 250px;
+    text-decoration: none;
+    position: absolute;
+    margin-left: -170px;
+    margin-top: 120px;
+
+}
+
+#root #menu .menu-block span{
+    font-size: 80px;
+}
+
+#root #menu .menu-block:hover {
+    background: cornflowerblue;
+}
+
+#root #menu .menu-block:hover a{
+    color:lightgrey;
+}
+
+#root #menu .menu-block:hover span{
+    color:lightgrey;
+}
+
+.EditLector,.ExitMenu{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    color:white;
+    margin-left: 20px;
+    border: none;
+    margin-top: 20px;
+}
+
+.EditLector{
+    background: lightslategrey;
+}
+.ExitMenu{
+    background: dodgerblue;
+}
+
+    .EditLector span,.ExitMenu
+span{
+    font-size: 80px;
+}
+
+    .EditLector a,.ExitMenu a{
+    color: white;
+    font-size: 24px;
+    width: 250px;
+    text-decoration: none;
+    position: absolute;
+    margin-left: -170px;
+    margin-top: 120px;
+
+}
+    .EditLector:hover a,.ExitMenu:hover a{
+        color:lightgrey;
+        text-decoration: none;
+    }
+
+.EditLector:hover span,.ExitMenu:hover span{
+    color:lightgrey;
+    text-decoration: none;
+}
+.EditLector:hover{
+    background: dimgrey;
+}
+.ExitMenu:hover{
+    background: cornflowerblue;
+}
+
+/*Description of forms*/
+.Form{
+    background: white;
+    position: absolute;
+    width: 360px;
+    left: 30%;
+    top:50px;
+    border: 1px solid dodgerblue;
+}
+.Form form{
+    margin-top: 30px;
+}
+.Form form dt{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.Form form dt label{
+    letter-spacing: 1px;
+}
+.Form form dd{
+    margin-left: 40px;
+}
+
+.Form form dd input[type="text"]{
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    width: 260px;
+}
+.Form form dd select{
+    border-radius:3px;
+    border: 1px solid dodgerblue;
+}
+
+.Form .CloseForm span{
+margin-left: 285px;
+}
+
+.Form .SaveForm button{
+    margin-left: 220px;
+    background: dodgerblue;
+    border: none;
+    border-radius: 3px;
+    Color:white;
+    font-size: 20px;
+    width: 80px;
+}
+.Form .SaveForm button:focus{
+    background:cornflowerblue;
+    color:lightgrey;
+}
+.Form .SaveForm{
+    margin-bottom: 20px;
+}
+
+#LectorForm,#EventForm{
+    visibility: hidden;
+}
+
+/*Description of calendar*/
+
+.Date{
+    border-top:3px solid white ;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background: dodgerblue;
+}
+
+.Date span{
+    font-size: 46px;
+    color: white;
+
+}
+
+.Date span:hover{
+    color: lightgrey;
+}
+
+.Date a{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    top: -12px;
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+}
+
+.Date a:hover{
+    text-decoration: none;
+    color: lightgrey;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+
+}
+
+table td{
+    font-size: 18px;
+    text-align: center;
+    border: 3px solid white;
+    background: dodgerblue;
+    color: white;
+    width: 100px;
+
+}
+
+table .NotThisMonth{
+    background: lightgrey;
+}
+
+table .Today{
+    background: darkslateblue;
+    color: sandybrown;
+}
+
+table .NotThisMonth,table .NotToday,table .Today{
+    height: 100px;
+}
